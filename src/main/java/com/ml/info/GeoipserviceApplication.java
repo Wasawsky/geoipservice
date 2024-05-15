@@ -1,4 +1,4 @@
-package com.ml.info.geoipservice;
+package com.ml.info;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
