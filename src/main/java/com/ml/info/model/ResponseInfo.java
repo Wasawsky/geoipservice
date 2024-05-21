@@ -23,20 +23,20 @@ import lombok.Setter;
 })
 public class ResponseInfo {
     @JsonProperty("IP")
-    public String ip;
+    private String ip;
     @JsonProperty("Fecha actual")
-    public String fechaactual;
+    private String fechaactual;
     @JsonProperty("País")
-    public String pais;
+    private String pais;
     @JsonProperty("ISO Code")
-    public String iSOCode;
+    private String iSOCode;
     @JsonProperty("Idiomas")
-    public String idiomas;
+    private String idiomas;
     @JsonProperty("Moneda")
-    public String moneda;
+    private String moneda;
     @JsonProperty("Hora")
-    public String hora;
+    private String hora;
     @JsonProperty("Distancia estimada")
-    public String distanciaestimada;
+    private String distanciaestimada;
 
 }
