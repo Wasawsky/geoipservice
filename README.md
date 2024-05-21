@@ -19,7 +19,7 @@ Se conecta con varias apis publicas para generar una estructura que ayude a iden
 El servicio tambien expone una operacion para las estadisticas:
 
     - Distancia mas lejana a Buenos Aires
-    - Distancian mas cercana a Buenos Aires
+    - Distancia mas cercana a Buenos Aires
     - Distancia promedio con todas las ejecuciones
 
 ### Observaciones a tener en cuenta
