@@ -2,6 +2,7 @@ package com.ml.info.service.impl;
 
 import com.ml.info.client.dto.countryinfo.ResponseCountryInfoDTO;
 import com.ml.info.client.dto.currencyinfo.ResponseCurrencyDTO;
+import com.ml.info.client.dto.searchip.ResponseSearchIpDTO;
 import com.ml.info.client.integration.CountryInfoApiService;
 import com.ml.info.client.integration.CurrencyInfoApiService;
 import com.ml.info.client.integration.SearchIpApiService;
@@ -39,14 +40,14 @@ public class GeoIpServiceImpl implements GeoIpService {
     public ResponseInfo requestInfoIP(String ip) {
 
         ResponseInfo finalResponseInfo = ResponseInfo.builder().build();
-        ///ResponseSearchIpDTO responseSearchIpDTO = searchIpApiService.searchInfoIp(ip);
+        ResponseSearchIpDTO responseSearchIpDTO = searchIpApiService.searchInfoIp(ip);
         ResponseCountryInfoDTO responseCountryInfoDTO = countryInfoApiService.searchCountryInfo(ip);
         ResponseCurrencyDTO responseCurrencyDTO = currencyInfoApiService.searchCurrencyInfo(responseCountryInfoDTO.getCurrencyDTO().getCurrencyCode(), BUSINESS_TARGETED_EXCHANGE);
         finalResponseInfo.setIp(ip);
         finalResponseInfo.setFechaactual(apiUtil.getZonedDate());
         finalResponseInfo.setPais(responseCountryInfoDTO.getCountry());
         finalResponseInfo.setISOCode(responseCountryInfoDTO.getCountryCode());
-        //finalResponseInfo.setIdiomas(mapperService.mapLanguages(responseSearchIpDTO.getLocation().getLanguageDTOS()));
+        finalResponseInfo.setIdiomas(mapperService.mapLanguages(responseSearchIpDTO.getLocation().getLanguageDTOS()));
         finalResponseInfo.setMoneda(responseCurrencyDTO.toStringUsd());
         finalResponseInfo.setHora(apiUtil.getArgZoneDate(responseCountryInfoDTO.getTimezoneDTO().getName()));
         finalResponseInfo.setDistanciaestimada(getFixedValueDistance(responseCountryInfoDTO,responseCountryInfoDTO.getCountry()));
