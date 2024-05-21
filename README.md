@@ -36,7 +36,7 @@ El servicio esta conectado con la herramienta gratuita de Circle CI para verific
 [![e7ed11da-ac58-4652-8e49-0b4ba956f5d5](https://circleci.com/gh/e7ed11da-ac58-4652-8e49-0b4ba956f5d5/GeoIpService.svg?style=svg)](https://circleci.com/gh/e7ed11da-ac58-4652-8e49-0b4ba956f5d5/GeoIpService)
 
 
-[![CircleCI](https://circleci.com/gh/freelanceatom/GeoIpService.svg?style=svg&circle-token=CCIPRJ_A61K2yUpZpqjfSs6bUqygW_08810e05c9e0be0048b0700a672afafd3e12afcf)](https://circleci.com/gh/freelanceatom/GeoIpService)
+[![CircleCI](https://circleci.com/gh/freelanceatom/GeoIpService.svg?style=svg)](https://circleci.com/gh/freelanceatom/GeoIpService)
 
 ## Consumo del servicio
 
