@@ -23,12 +23,8 @@ El servicio tambien expone una operacion para las estadisticas:
 
 El servicio esta conectado con la herramienta gratuita de Circle CI para verificar la compilacion del proyecto
 
-[![CircleCI](https://circleci.com/gh/circleci/circleci-docs/tree/teesloane-patch-5.svg?style=svg)](https://circleci.com/gh/circleci/circleci-docs/?branch=teesloane-patch-5)
+[![CircleCI](https://circleci.com/gh/delaware01/geoipservice.svg?style=svg&circle-token=CCIPRJ_A61K2yUpZpqjfSs6bUqygW_08810e05c9e0be0048b0700a672afafd3e12afcf)](https://app.circleci.com/pipelines/circleci/FeV7GhpM6hBwAU7m6YWZzz/RjbtSy5NGFNShvYrLRUczZ)
 
-[![CircleCI](https://circleci.com/gh/FreelancerATMOS/geoipservice?style=svg)](https://app.circleci.com/pipelines/circleci/bd0b3675-cd1e-482f-bb81-8911af703de4)
-
-
-[![CircleCI](https://circleci.com/gh/circleci/circleci-docs.svg?style=svg)](https://circleci.com/gh/circleci/circleci-docs)
 
 ## Consumo del servicio
 
